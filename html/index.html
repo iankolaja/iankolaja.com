@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IAN KOLAJA | OFFICIAL WEBSITE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/home.css">
+<!-- Favicon -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+	
+</style>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+	  <a href="./index.html" class="w3-btn w3-hide-small w3-hide-medium" style="margin-top:6px;"><img src="images/logo.png" height="28" alt="IAN KOLAJA"/></a>
+	  <a href="./index.html" class="w3-btn w3-hide-large w3-hide-small" style="margin-top:7px;"><img src="images/logo.png" height="22" alt="IAN KOLAJA"/></a>
+	  <a href="./index.html" class="w3-btn w3-hide-large w3-hide-medium" style="margin-top:7px;"><img src="images/logo.png" height="20" alt="IAN KOLAJA"/></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+      <a href="https://soundcloud.com/iankolaja" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-music"></i>  MUSIC</a>
+	  <a href="https://www.youtube.com/channel/UCVaE5mXzT_BvniRBhxCIQ3w" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-play"></i>  VIDEOS</a>
+      <a href="https://vimeo.com/iankolaja" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-film"></i>  FILM</a>
+      <a href="https://beatkoala.beatstars.com/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i>  BUY BEATS</a>
+	  <a href="./gallery.html" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>  GALLERY</a>
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-small" onclick="w3_open()">
+      <i class="fa fa-bars w3-large"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">CLOSE  <i class="fa fa-times-circle" style="margin-left:3px"></i></a>
+  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home"></i>  HOME</a>
+  <a href="https://soundcloud.com/iankolaja" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-music"></i>  MUSIC</a>
+  <a href="https://www.youtube.com/channel/UCVaE5mXzT_BvniRBhxCIQ3w" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-play"></i>  VIDEOS</a>
+  <a href="https://vimeo.com/iankolaja" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-film"></i>  FILM</a>
+  <a href="https://beatkoala.beatstars.com/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i>  BUY BEATS</a>
+  <a href="./gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>  GALLERY</a>
+  <a href="./join.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>  SIGN UP</a>
+</nav>
+	
+	
+
+<!-- Header with full-height image for large display -->
+<div class="hero-image hero-image-wide w3-hide-small">
+</div>
+
+<div class="hero-image hero-image-tall w3-hide-medium w3-hide-large">
+</div>
+
+
+
+
+<!-- Footer -->
+	<footer class="w3-bottom">
+			<div class="w3-bar w3-black w3-container w3-center w3-xlarge w3-hide-small" style="width=100%">
+			  <a href="https://www.facebook.com/Ian-Kolaja-1921343111274202/" target="_blank" class="w3-bar-item w3-button w3-padding-medium fa fa-facebook-official w3-hover-opacity"></a>
+			  <a  href="https://www.instagram.com/iankolaja/" target="_blank" class="w3-bar-item w3-button w3-padding-medium fa fa-instagram w3-hover-opacity"></a>
+			  <a href="https://twitter.com/iankolaja" target="_blank" class="w3-bar-item w3-button w3-padding-medium fa fa-twitter w3-hover-opacity"></a>
+			  <a href="https://www.youtube.com/channel/UCVaE5mXzT_BvniRBhxCIQ3w" target="_blank" class="w3-bar-item w3-button w3-padding-medium fa fa-youtube w3-hover-opacity"></a>
+			  <a href="https://soundcloud.com/iankolaja" target="_blank" class="w3-bar-item w3-button w3-padding-medium fa fa-soundcloud w3-hover-opacity"></a>
+			  <a href="./join.html" class="w3-bar-item w3-button w3-medium w3-padding-medium" style="float:right; margin-top:-3px; margin-bottom:-2px;"><i class="fa fa-envelope"></i>  SIGN UP</a>
+			</div>
+			<div class="w3-bar w3-black w3-container w3-center w3-large w3-hide-large w3-hide-medium" style="width=100%">
+			  <a href="https://www.facebook.com/Ian-Kolaja-1921343111274202/" target="_blank" class="w3-bar-item w3-button fa fa-facebook-official w3-hover-opacity w3-bottom-padding-small" style="padding-left:8px; padding-right:8px;"></a>
+			  <a  href="https://www.instagram.com/iankolaja/" target="_blank" class="w3-bar-item w3-button fa fa-instagram w3-hover-opacity w3-bottom-padding-small" style="padding-left:8px; padding-right:8px;"></a>
+			  <a href="https://twitter.com/iankolaja" target="_blank" class="w3-bar-item w3-button fa fa-twitter w3-hover-opacity" style="padding-left:8px; padding-right:8px;"></a>
+			  <a href="https://www.youtube.com/channel/UCVaE5mXzT_BvniRBhxCIQ3w" target="_blank" class="w3-bar-item w3-button fa fa-youtube w3-hover-opacity"style="padding-left:8px; padding-right:8px;"></a>
+			  <a href="https://soundcloud.com/iankolaja" target="_blank" class="w3-bottom-padding-small w3-bar-item w3-button fa fa-soundcloud w3-hover-opacity" style="padding-left:8px; padding-right:8px;"></a>
+			  <a href="./join.html" class="w3-bar-item w3-button w3-small" style="float:right; margin-top:-3px; margin-bottom:-2px; padding-left:8px; padding-right:8px;"><i class="fa fa-envelope"></i>  SIGN UP</a>
+			</div>
+			<div class="w3-bar w3-black w3-container w3-center w3-tiny" style="width=100%; margin-top: -5px; padding-bottom: 1px;">
+			  <span>© 2019 Ian Kolaja | </span><a href="mailto:iankolajaart@gmail.com">Contact</a>
+			</div>
+	</footer>
+</div>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+	
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+	
+</script>
+
+</body>
+</html>
