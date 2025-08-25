@@ -1,19 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.hero-image {
-    background-position: center;
-    background-size: cover;
-	background-attachment: fixed;
-    min-height: 100%;
-	margin-bottom: -110px;
-}
-.hero-image-wide {
-    background-image: url("../images/banner_wide.jpg");
-}
-.hero-image-tall {
-    background-image: url("../images/banner_tall.jpg");
-}
+
 .fa {
 	padding-right: 2px;
 }
@@ -27,69 +15,72 @@
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
-.hero-box {
-	position:relative;
-	margin:auto;
-	margin-bottom:-40px;
-	width:90%; 
-	max-width:1050px;
-	height:160px;
-	padding-left:10px; 
-	padding-right:10px; 
-	padding-top:10px; 
-    color: white;
-	text-align: center;
-}	
-.event-pic {
-	max-width: 100%;
-	height: auto;
+
+.header-button {
+	padding-top:6px;
+	margin-top:6px;
+	padding-bottom:6px;
+	line-height:1.0;
+	font-size:2vw;
 }
-.event-box {
-	height: 100%;
-	width: 100%;
-	box-shadow:0 4px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	margin-bottom:15px;
+
+.header-container {
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  width:100%;
+  margin: auto;       /* keeps it centered horizontally */
 }
-.event-title {
-	line-height:50%;
-	font-size: 18px;
-	font-weight: bold;
+
+@media (max-width: 1200px) {
+  .header-container {
+  padding-left: 2%;
+  padding-right: 2%;
+  width:100%;
+  margin: auto;       /* keeps it centered horizontally */
+  }
 }
-.event-location {
-	line-height:50%;
-	font-size: 15px;
+
+.w3-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  max-width: 1200px;  /* or whatever max width you want */
+  margin: auto;       /* keeps it centered horizontally */
 }
-.event-date {
-	line-height:50%;
-	font-size: 16px;
-	
+
+@media (max-width: 700px) {
+  .w3-container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
-.search-button {
-	width:20%; 
-	text-align:center; 
-	padding-left:0px; 
-	padding-right:0px; 
-	float: left;
+
+
+h1 {
+  font-size: clamp(48px, 3vw, 60px);
 }
-.event-footer-box {
-	padding: 0px 0px;
-	margin: 0px 0px 15px 0px;
-	height:30px;
-	color:#000!important;
-	background-color:#f1f1f1!important;
-	display:inline-block;
+
+h2 {
+  font-size: clamp(32px, 2vw, 40px);
 }
-.event-footer-text {
-	margin-left: 5px;
-	margin-top: 7px;
-	line-height:100%;
-	font-size: 14px;
+
+h3 {
+  font-size: clamp(32px, 2vw, 40px);
 }
-.event-buttons {
-	padding: 0px 0px;
-	margin: 0px;
-	vertical-align: center;
-	font-size: 14px;
-	width:100%;
-	
+
+h4 {
+  font-size: clamp(28px, 1.75vw, 35px);
 }
+
+h5 {
+  font-size: clamp(24px, 1.5vw, 30px);
+}
+
+h6 {
+  font-size: clamp(18px, 1.25vw, 25px);
+}
+
+
