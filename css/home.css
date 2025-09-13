@@ -16,6 +16,32 @@
 	padding-bottom: 8px;
 }
 
+/* Container for the bibliography */
+.csl-bib-body {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+  font-family: serif;
+  font-size: 0.95rem;
+}
+
+/* Individual entries */
+.csl-entry {
+  margin-bottom: 0.5em;
+  text-indent: -1.5em;   /* Hanging indent */
+  padding-left: 1.5em;
+}
+
+/* If entries have labels (e.g. [1], (Kolaja 2024)) */
+.csl-left-margin {
+  display: inline-block;
+  min-width: 2em;
+}
+
+.csl-right-inline {
+  display: inline;
+}
+
 .header-button {
 	padding-top:6px;
 	margin-top:6px;
@@ -25,9 +51,9 @@
 }
 
 .header-container {
-  padding-left: 7.5%;
-  padding-right: 7.5%;
-  width:100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 1200px;  /* or whatever max width you want */
   margin: auto;       /* keeps it centered horizontally */
 }
 
@@ -35,7 +61,6 @@
   .header-container {
   padding-left: 2%;
   padding-right: 2%;
-  width:100%;
   margin: auto;       /* keeps it centered horizontally */
   }
 }
@@ -83,4 +108,6 @@ h6 {
   font-size: clamp(18px, 1.25vw, 25px);
 }
 
-
+.footer-text{
+  font-size: clamp(14px, 1.0vw, 20px)
+}
