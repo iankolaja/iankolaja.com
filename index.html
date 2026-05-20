@@ -226,11 +226,11 @@
           
           <h4 style="line-height:1;">Pebble Bed Reactor State Forecasting</h4>
           <p>Ian addressed challenges in PBR operation using a time series analysis approach. Reactivity control in PBRs is difficult due to the coupled, nonlinear relationships between different control mechanisms, which also act on different time scales. In-core measurement is limited in high-temperature environments, making it essential to leverage operation history and discharge fuel measurements to infer the state of the reactor core.</p>
-          <p style="text-align:center; line-height: 0;">Reactor State Forecasting Model Architecture</p>
+          <p style="text-align:center; line-height: 1;">Reactor State Forecasting Model Architecture</p>
           <img src="images/lstm_implementation_diagram.png" class="w3-round" style="width:100%; max-width:400px; display: block; margin: auto;">
           <p>Ian designed an ML system for forecasting reactor behavior using Long Short-Term Memory (LSTM) neural networks trained on simulation data generated with Monte Carlo methods. Synthetic measurements intended to mirror what operators could feasibly collect in practice were constructed and, coupled with operation history, served as the noisy input to the model, which achieved an R² of 0.991 on held-out data.</p>
           <p>The LSTM model was coupled with a simulator to predict the impact of candidate control actions, allowing the model to steer the simulator from low to high power while maintaining criticality. This approach offers reactor operators a fast way to assess the impact of different control strategies before committing to an expensive full simulation.</p>
-          <p style="text-align:center; line-height: 0;">Planned System Design for Application of Models in Real Reactor</p>
+          <p style="text-align:center; line-height: 1;">Planned System Design for Application of Models in Real Reactor</p>
           <img src="images/lstm_full_planned_system.png" class="w3-center w3-round"  style="width:100%">
           <p>An ArXiv manuscript describing this work is <a target="_blank"
               href="https://arxiv.org/abs/2511.05118">available</a>.</p>
@@ -238,7 +238,7 @@
           <h4 style="line-height:1;">Bent Crystal Diffraction Spectrometry</h4>
           <p>Ian investigated the challenge of rapidly measuring fuel pebbles discharged from PBRs. These pebbles are highly radioactive and must be processed quickly to avoid imposing additional operating constraints on the reactor. One approach for enhancing this process is the use of bent crystal diffraction (BCD) spectrometers, which act as energy-selective photon filters. By filtering specific gamma rays or narrow energy bands, virtually all Compton scattering and dead time can be eliminated, enabling much more accurate inference of pebble properties including burnup, number of passes, actinide concentrations, residence time, and neutron fluence.</p>
           <p>This work resulted in a provisional patent and a peer-reviewed publication in Annals of Nuclear Energy, which is <a target="_blank" href="https://doi.org/10.1016/j.anucene.2026.112263">available online</a>.</p>
-          <p style="text-align:center; line-height: 0;">Schematic of BCD Spectrometer</p>
+          <p style="text-align:center; line-height: 1;">Schematic of BCD Spectrometer</p>
           <img src="images/bragg_spectrometer_diagram.png" class="w3-center w3-round"  style="width:100%; max-width:400px; display: block; margin: auto;">
 
           <div class="anchor" id="publications"></div>
