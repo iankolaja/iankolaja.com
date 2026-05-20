@@ -219,14 +219,14 @@
           <p>Ian designed and built NuGrade, a nuclear data quality analysis web tool for assessing cross section data from EXFOR and evaluations such as ENDF. Data is graded on a reaction-channel basis using a metric that combines agreement between experimental data and evaluations with energy coverage. Users can access an interactive chart of nuclides, adjust scoring parameters, and browse data for specific nuclides and reactions.</p>
           <img src="images/nugrade_chart_of_nuclides.png" class="w3-center w3-round"  style="width:100%">
           <p>NuGrade features an LLM agent capable of analyzing the data and computed metrics. A natural language processing pipeline allows experimental reports from EXFOR to be incorporated into this analysis: SciBERT is used to compute sentence-level embeddings, and a retrieval-augmented generation (RAG) framework enables the agent to find, reference, and discuss text from relevant reports. Missing measurement uncertainties can be imputed using K-nearest neighbors by identifying the most similar experiments that have reported uncertainty values.</p>
+          <img src="images/nugrade_chatbot.png" class="w3-round" style="width:100%; max-width:500px; display: block; margin: auto;">
           <p>The NuGrade repository is <a target="_blank"
               href="https://github.com/iankolaja/NuGrade">available
               on GitHub</a>, and it may be publicly hosted in the future with an accompanying report or article.</p>
-          <img src="images/nugrade_chatbot.png" class="w3-round" style="width:100%; max-width:500px; display: block; margin: auto;">
-
+          
           <h4 style="line-height:1;">Pebble Bed Reactor State Forecasting</h4>
           <p>Ian addressed challenges in PBR operation using a time series analysis approach. Reactivity control in PBRs is difficult due to the coupled, nonlinear relationships between different control mechanisms, which also act on different time scales. In-core measurement is limited in high-temperature environments, making it essential to leverage operation history and discharge fuel measurements to infer the state of the reactor core.</p>
-          <p style="text-align:center; line-height: 0;">LSTM Implementation</p>
+          <p style="text-align:center; line-height: 0;">Reactor State Forecasting Model Architecture</p>
           <img src="images/lstm_implementation_diagram.png" class="w3-round" style="width:100%; max-width:400px; display: block; margin: auto;">
           <p>Ian designed an ML system for forecasting reactor behavior using Long Short-Term Memory (LSTM) neural networks trained on simulation data generated with Monte Carlo methods. Synthetic measurements intended to mirror what operators could feasibly collect in practice were constructed and, coupled with operation history, served as the noisy input to the model, which achieved an R² of 0.991 on held-out data.</p>
           <p>The LSTM model was coupled with a simulator to predict the impact of candidate control actions, allowing the model to steer the simulator from low to high power while maintaining criticality. This approach offers reactor operators a fast way to assess the impact of different control strategies before committing to an expensive full simulation.</p>
